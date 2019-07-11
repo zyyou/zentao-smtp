@@ -64,7 +64,7 @@ module.exports = {
   }],
 
   deploy: {
-    dev121: {
+    dev145: {
       //服务器用户名
       user: 'root',
       //服务器IP
