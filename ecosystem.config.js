@@ -68,7 +68,7 @@ module.exports = {
       //服务器用户名
       user: 'root',
       //服务器IP
-      host: '192.168.70.121',
+      host: '192.168.5.145',
       //仓库分支
       ref: 'origin/master',
       //仓库地址
