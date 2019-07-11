@@ -1,0 +1,37 @@
+<style>
+    .alink {
+        text-align: center;
+    }
+
+    .alink>p {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .alink>a {
+        float: right;
+        margin-top: 10px;
+    }
+</style>
+
+<div class="wrap">
+    <div data-role="loginbox" data-margin="auto" style="height: 280px;">
+        <form method="POST">
+            <h4><%=ctx._appConfig.title%>登录</h4>
+            <div class="inputbox">
+                <label>邮箱账号：</label>
+                <input type="text" placeholder="请输入邮箱账号" name="email">
+            </div>
+            <div class="inputbox pwdcontrol">
+                <label>邮箱密码：</label>
+                <input type="password" placeholder="请输入邮箱密码" name="password">
+            </div>
+            <button type="submit" class="loginbtn">登陆</button>
+        </form>
+        <div class="alink">
+            <p><%=ctx._appConfig.smtp.tips%></p>
+            <p>忘记密码请联系邮箱管理员</p>
+            <a href="<%=ctx._appConfig.zentao.url%>">点此使用系统账号登录</a>
+        </div>
+    </div>
+</div>

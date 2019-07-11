@@ -1,0 +1,19 @@
+<style>
+  #errmsg {
+    text-align: center;
+    color: white;
+  }
+  #errmsg > p{
+    margin: 30px;
+  }
+  #errmsg > a{
+    color: white;
+    cursor: pointer;
+  }
+</style>
+
+<div id="errmsg">
+  <p><%= message %></p>
+  <a onclick='javascript:history.go(-1)'>返回</a>
+
+</div>

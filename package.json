@@ -1,0 +1,42 @@
+{
+  "name": "zentaosmtp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mon": "nodemon bin/www",
+    "prd": "pm2 start bin/www",
+    "dev": "pm2 start ecosystem.config.js --only zentaosmtp-dev && pm2 log zentaosmtp-dev",
+    "build": "./node_modules/.bin/webpack",
+    "merge121": "git checkout dev && git pull && git checkout dev121 && git pull && git merge dev && git push origin dev121 && git checkout dev",
+    "deploy": "pm2 deploy dev121"
+  },
+  "dependencies": {
+    "auth-smtp": "^1.0.3",
+    "bcklib": "^2.0.1",
+    "debug": "^2.6.3",
+    "ejs": "^2.6.1",
+    "glob": "^7.1.4",
+    "https-sync": "^1.1.1",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-ejs": "^4.2.0",
+    "koa-json": "^2.0.2",
+    "koa-jwt": "^3.5.1",
+    "koa-logger": "^2.0.1",
+    "koa-mvcrouter": "^1.2.0",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0",
+    "koa-useragent": "^1.2.0",
+    "koa-views": "^5.2.1",
+    "moment": "^2.24.0",
+    "node-pre-gyp": "^0.12.0"
+  },
+  "devDependencies": {},
+  "author": "zyy",
+  "license": "MIT",
+  "homepage": "https://github.com/zyyou/zentao-smtp"
+}

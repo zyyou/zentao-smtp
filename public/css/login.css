@@ -1,0 +1,297 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    font:14/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,simsun,sans-serif;
+}
+button{
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; /*点击阴影*/
+    cursor:pointer;
+    background-image: none;
+    border:none;
+    background: inherit;
+    outline: none;
+    font-size:13px;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+.wrap{
+    width:1200px;
+    height: auto;
+    margin:0 auto;
+    overflow: hidden;
+}
+input:not(input[type="radio"]){
+    outline: none;
+    padding:0 5px;
+    line-height: 35px;
+    border: 1px solid #d8d8d8;
+    background: #fff;
+    -webkit-appearance: none;
+}
+select{
+    outline: none;
+    padding:0 5px;
+    border: 1px solid #d8d8d8;
+    background: #fff;
+    line-height: 35px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.header{
+    height:70px;
+    line-height: 70px;
+}
+    .header .logo{
+        display:block;
+        float:left;
+    }
+    .header .nav{
+        display: block;
+        float:right;
+    }
+    .header .nav a{
+        font-size:14px;
+        margin:0 8px;
+    }
+.conter{
+    width: 100%;
+    height:580px;
+    background: #458cc8;
+}
+    [data-role=loginbox]{
+        float:right;
+        margin:40px 0;
+        border: 1px solid #ffffff;
+        background-color: #ffffff;
+        height: 454px;
+        width: 320px;
+        padding: 20px;
+        color:#666;
+    }   
+    /* login 标题 */
+    [data-role=loginbox] h4{
+        text-align: center;
+        font-size:24px;
+        line-height: 48px;
+        margin-bottom:10px;
+    } 
+    /* input radio */
+    /* [data-role=loginbox] .rodiobox {
+        height: 40px;
+        overflow: hidden;
+    } */
+        [data-role=loginbox] .rodiobox label{
+            width: 48%;
+            display: block;
+            float:left;
+            text-align: left;
+            font-size:14px;
+            line-height: 40px;
+            margin-right: 5px;
+        }
+        [data-role=loginbox] .rodiobox input[type="radio"],[data-role=loginbox] input[type="checkbox"]{
+            /* width: 18px;
+            height: 18px; */
+            display: block;
+            float: left;
+            margin:11px 8px 0 0;
+        }
+        [data-role=loginbox] .checkbox {
+            overflow: hidden;
+            height: 40px;
+        }
+        [data-role=loginbox] .checkbox input[type="text"]{
+            width: 160px;
+        }
+        [data-role=loginbox] .checkbox label{
+            width: 30%;
+            font-size:14px;
+            line-height: 40px;
+        }
+        [data-role=loginbox] .checkbox span{
+            font-size:14px;
+            line-height: 40px;
+            margin-left: 20px;
+        }
+    /* inputbox */
+        .inputbox{
+            width: 100%;
+            margin:10px 0;
+            overflow: hidden;
+            position: relative;
+        }
+        .inputbox label{
+            font-size:14px;
+            width: 28%;
+            display: block;
+            float: left;
+            text-align: right;
+            line-height: 40px;
+            overflow: hidden;
+            margin-right: 5px;
+            height: 40px;
+        }
+        .inputbox input{
+            display: block;
+            float: left;
+            width: 66%;
+            height: 35px;
+        }
+        .inputbox select {
+            display: block;
+            float: left;
+            width: 70%;
+            height: 37px;
+            color: #666;
+            background: #fff url(../../hymer/image/select-down.png) no-repeat 95% 9px;
+        }
+        .vibox input{
+            width: 44%;
+        }
+        .vibox .tiptext{
+            display: block;
+            float:left;
+            width: 50px;
+            margin-left: 5px;
+            font-size:12px;
+            line-height: 40px;
+        }
+        .findpwd{
+            display: none;
+            text-align: right;
+            font-size:12px;
+            cursor: pointer;
+        }
+        .loginbtn{
+            display: block;
+            width: 100%;
+            background: #458cc8;
+            border-radius: 8px;
+            line-height: 40px;
+            text-align: center;
+            color:#fff;
+            font-size:16px;
+            margin:10px 0;
+        }
+/* 密码控件a */
+.pwdcontrol a{
+position: absolute;
+left:0;
+top: 0;
+display: block;
+float: left;
+width: 100%;
+line-height: 40px;
+text-align: center;
+font-size: 14px;
+color:#0082C0;
+cursor: pointer;
+}
+.alink a{
+width: 48%;
+display: block;
+float: left;
+text-align: center;
+font-size:13px;
+line-height: 20px;
+text-decoration: underline;
+color:#0082C0;
+}
+
+.foot {
+position: fixed;
+left:0;
+bottom:0;
+width: 100%;
+height: 28px;
+line-height: 28px;
+background: #333;
+text-align: center;
+}
+.foot p, .foot a {
+color: #fff;
+opacity: 0.8;
+filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+font-size: 12px;
+}
+.foot p span {
+margin: 0 20px;
+}
+
+/* mini 居中 */
+[data-margin=auto]{
+margin:0;
+position: fixed;
+left:50%;
+top:50%;
+margin-left:-159px;
+margin-top:-248px;
+
+}
+@media  (max-width:350px){
+.header{
+height: auto;
+line-height: 50px;
+}
+.header .nav,.header .logo{
+float: initial;
+text-align: center;
+}
+
+.wrap{
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+[data-margin=auto]{
+position:initial;
+}
+[data-role=loginbox]{
+width: 80%;
+padding: 5%;
+float: initial;
+margin:30px auto 0 auto;
+}
+.inputbox label{
+font-size:14px;
+width: 70px;
+display: block;
+float: left;
+text-align: right;
+line-height: 40px;
+overflow: hidden;
+margin-right: 5px;
+height: 40px;
+}
+}
+@media (min-width: 350px) and (max-width: 700px){ 
+.wrap{
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+[data-margin=auto]{
+position: fixed;
+left:50%;
+top:6%;
+margin-left:0;
+margin-top:0;
+transform: translateX(-50%);
+}
+[data-role=loginbox]{
+width: 80%;
+padding: 5%;
+float: initial;
+margin:10px auto;
+}
+}
