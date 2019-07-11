@@ -31,7 +31,7 @@ module.exports = {
     append_env_to_name: true
   }, {
     //项目名称
-    name: 'zentaosmtp-121',
+    name: 'zentaosmtp-145',
     //启用或禁用观察模式（文件变动重启）
     watch: false,
     //指定要注入的环境变量
@@ -79,7 +79,7 @@ module.exports = {
       'post-setup': "npm install && ls -la",
       // 获取版本后在服务器上执行的脚本 
       //'post-deploy' : 'pm2 reload ecosystem.config.js --env dev145 && pm2 ls'
-      'post-deploy': 'pm2 reload ecosystem.config.js --only zentaosmtp-121 && pm2 ls'
+      'post-deploy': 'pm2 reload ecosystem.config.js --only zentaosmtp-145 && pm2 ls'
     }
   }
 };
