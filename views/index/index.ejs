@@ -16,11 +16,11 @@
 
 <div class="wrap">
     <div data-role="loginbox" data-margin="auto" style="height: 280px;">
-        <form method="POST">
+        <form method="POST" onsubmit="saveEmail()">
             <h4><%=ctx._appConfig.title%>登录</h4>
             <div class="inputbox">
                 <label>邮箱账号：</label>
-                <input type="text" placeholder="请输入邮箱账号" name="email">
+                <input type="text" placeholder="请输入邮箱账号" name="email" id="email">
             </div>
             <div class="inputbox pwdcontrol">
                 <label>邮箱密码：</label>
@@ -35,3 +35,18 @@
         </div>
     </div>
 </div>
+
+<script>
+    window.onload = function () {
+        let email = localStorage.getItem('email');
+        console.log('aa', email);
+        if (email && email.length > 1) {
+            console.log(1);
+            document.getElementById('email').value = email;
+        }
+    }
+
+    function saveEmail() {
+        localStorage.setItem('email', document.getElementById('email').value);
+    }
+</script>
