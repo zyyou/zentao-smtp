@@ -37,7 +37,8 @@ module.exports = {
     //指定要注入的环境变量
     env: {
       NODE_ENV: 'development',
-      app_config: 'zentaosmtp.js'
+      app_config: 'zentaosmtp.js',
+      config_path: '/hy/conf/'
     },
     //应用入口
     script: 'bin/www',
